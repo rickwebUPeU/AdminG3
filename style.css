@@ -1,0 +1,129 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+}*/
+
+/*Acá tengo estilos generales*/
+body{
+font-family: Arial, Helvetica, sans-serif; /*Vamos a unificar el tipo de texto en la página*/
+}
+
+.contenedor-imagenes{
+display: flex;
+}
+
+.contenedor-imagenes img {
+width: 100%;
+}
+
+/*Acá tengo estilos header*/
+header{
+background: #1f1f1f;
+padding: 10px 50px; /*agrega bordes internos de arriba - abajo e izq - der*/
+}
+
+#logo{
+width: 200px;
+}
+
+/*#logo img{
+border-radius:10%;
+border: 2px solid #fff;
+*/
+
+/*Acá tengo estilos hero*/
+#hero #computadora{
+display: inline-block;
+width: 100%; /*la imagen de la computadora ocupará toda la pantalla*/
+}
+
+#hero .contenedor-informacion-personal{
+position: absolute;  /*pone la foto sobre todas las imágenes - foto y detalle*/
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+
+/*width: 100%; tamaño completo*/
+color: #fff; /*letras de color blanco*/
+padding: 0 50px; /*arriba-abajo es 0 - izquierda-derecha 50px*/
+
+display: flex;/*alineación*/
+}
+
+#hero{
+position: relative; /*Pone la imagen y el texto en la esquima de header "logo"*/  
+}
+
+#hero .contenedor-informacion-personal #foto{
+width: 200px; /*reducimos la imagen*/
+}
+
+#hero .contenedor-informacion-personal #foto img{
+border-radius: 100%; /*redondeamos las esquinas*/
+}
+
+#hero .contenedor-informacion-personal .contenedor-detalle{
+    margin-left: 40px;/*separamos la imagen unos 40px*/
+    font-weight: bold; /*colocamos en negrita el texto*/
+    }
+    
+#hero .contenedor-informacion-personal .contenedor-detalle span{
+    color: #b5b5b5; /*sirve para cambiarle de color al correo*/
+    }
+
+/*Acá tengo estilos main*/
+
+main{
+   padding: 100px; 
+}
+
+main .contenedor-redes-sociales .contenedor-sociales{
+background: red; /*pintamos los íconos de color rojo*/
+display: flex;
+justify-content: center; /*centrar los íconos de las redes sociales*/
+align-items: center; /*cada ícono centrado en cada cajita*/
+padding: 15px; /*cada ícono se vuelve más grande*/
+margin-left: 20px; /*separar cada ícono*/
+border-radius: 5px; /*bordeamos los íconos*/
+width: 100%;
+height: 100%;
+}
+
+main .contenedor-redes-sociales{
+display:flex; /*ponemos los íconos uno al costado del otro*/
+justify-content: center; /*centrar los íconos de las redes sociales*/
+margin-top: 40px; /*separarse un poco del texto de los íconos*/
+list-style:none;
+}
+
+main .contenedor-redes-sociales #YouTube{
+    background: #f70000;
+}
+    
+main .contenedor-redes-sociales #GitHub{
+background: #23272d;
+}
+
+main .contenedor-redes-sociales #Twitter{
+    background: #1da1f2;
+}
+
+main .contenedor-redes-sociales #LinkedIn{
+    background: #0077b0;
+}
+    
+    
+
+
+
+
+
+
+
+
+
